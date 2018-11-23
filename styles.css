@@ -13,6 +13,7 @@
 	--yellow: #f2f26a;
 	--orange: #f2c96a;
 	--blue: #6aa3f2;
+	--magenta: #f26ae4;
 	
 	--darkred: #fc3025;
 }
@@ -133,9 +134,9 @@ h5{
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: calc(100vh - var(--navbar-height));
+	min-height: calc(100vh - var(--navbar-height));
 	flex-direction: column;
-	padding: 0 25%;
+	padding: 50px 20%;
 }
 
 .coverpage.cyan{
@@ -158,6 +159,9 @@ h5{
 }
 .coverpage.yellow{
 	background: var(--yellow);
+}
+.coverpage.magenta{
+	background: var(--magenta);
 }
 .navbar > ul{
 	text-decoration: none;
@@ -232,4 +236,32 @@ h5{
 	border-radius: 0;
 	height: 50%;
 	border: none;
+}
+.contact-table{
+	text-align:center;
+	border-collapse: collapse;
+	display: block;
+}
+.contact-table td{
+	padding: 5px;
+	border-bottom: 1px solid black;
+	margin: 0;
+	height: 120px;
+}
+.contact-table>thead>tr>td{
+	border-bottom: 4px double black;
+	font-weight: bold;
+}
+.contact-table p{
+	font-size: 1.25rem;
+}
+.tablewrapper{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:center;
+    flex-wrap: wrap;
+}
+.buttoncontainer{
+	margin: 20px 0;
 }
