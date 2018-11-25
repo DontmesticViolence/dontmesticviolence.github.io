@@ -1,0 +1,128 @@
+
+.shelter-searchcontainer{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+	border-radius: 4px;
+	overflow: hidden;
+}
+.shelter-searchcontrols{
+	height: 100%;
+	width: 40%;
+	
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.shelter-searchresults{
+	width: 60%;
+	height: 100%;
+}
+.shelter-table{
+	border-collapse: collapse;
+}
+.shelter-table *{
+	line-height: 100%;
+	vertical-align: middle;
+	text-align:center;
+}
+.shelter-table td{
+	padding: 5px;
+	margin: 0;
+}
+.shelter-result{
+	border: 1px dashed rgba(0,0,0,0.25);
+	border-top: none;
+	margin: 0;
+}
+
+.shelter-result span{
+	display: block;
+	margin: .5rem;
+	margin: 0;
+	padding: 4px;
+}
+.shelter-result span:first-of-type{
+	font-weight:bold;
+}
+.shelter-result span:nth-of-type(2){
+	color: #555;
+}
+
+.shelter-result:nth-of-type(odd){
+	background: rgba(0,0,0,0.125);
+}
+.shelter-result:nth-of-type(even){
+	background: rgba(255,255,255,0.125);
+}
+
+.fullwidth{
+	width: 100%;
+}
+
+
+<a name="search"></a>
+				<div class="coverpage coverpagenp green">
+					<h3 class="pageheader">Search</h3>
+					
+					<div class="shelter-searchcontainer">
+						<div class="shelter-searchcontrols">
+						
+						<table class="shelter-table">
+							<tbody>
+								<tr>
+									<td>
+										<select name="s-state" class="fullwidth">
+											<option value="" disabled selected>Select State</option>
+											<option value="NY">NY</option>
+											<option value="NJ">NJ</option>
+											<option value="WY">WY</option>
+											<option value="WA">WA</option>
+											<option value="PA">PA</option>
+											<option value="TX">TX</option>
+										</select> 
+									</td>
+									<td>
+										<div class="button btn-small">Search</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="fullwidth" type="textbox" name="s-zipcode" placeholder="Zip Code" />
+									</td>
+									<td>										
+										<div class="button btn-small">Search</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<div class="shelter-searchresults">
+							<div class="shelter-result">
+								<span>Name of Place</span>
+								<span>Where it is - distance</span>
+								<span>brief description</span>
+							</div>
+							<div class="shelter-result">
+								<span>Name of Place</span>
+								<span>Where it is - distance</span>
+								<span>brief description</span>
+							</div>
+							<div class="shelter-result">
+								<span>Name of Place</span>
+								<span>Where it is - distance</span>
+								<span>brief description</span>
+							</div>
+							<div class="shelter-result">
+								<span>Name of Place</span>
+								<span>Where it is - distance</span>
+								<span>brief description</span>
+							</div>
+						</div>
+					</div>
+				</div>
