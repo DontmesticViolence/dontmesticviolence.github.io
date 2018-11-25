@@ -16,6 +16,9 @@
 	--magenta: #f26ae4;
 	
 	--darkred: #fc3025;
+	
+	--border-color:rgba(0,0,0,0.7);
+	
 	font-size: 14px;
 	
 }
@@ -198,7 +201,8 @@ h5{
 .button{
 	text-decoration: none;
 	color: var(--ui-color);
-	border: 2px solid black;
+	border: 2px solid var(--border-color);
+	color: var(--border-color);
 	border-radius: 10px;
 	padding: 10px 20px;
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -215,7 +219,7 @@ h5{
 	box-shadow: 0 0 5px 5px rgba(111,111,111,0.05) inset;
 }
 .button:active{
-	box-shadow: 0 0 5px 5px rgba(111,111,111,0.1) inset;
+	box-shadow: 0 0 5px 5px rgba(95,95,95,0.1) inset;
 }
 .btn-small{
 	padding: 5px 10px;
@@ -302,12 +306,14 @@ h5{
 }
 input[type="search"]{
 	outline: 0;
-	padding: 0.25rem;
+	padding: 1.1rem;
 	margin:0;
 	border-radius: 5rem 0 0 5rem;
-	border: 1px solid #aaa;
+	border: 2px solid var(--border-color);
 	height: 3rem;
 	width: 80%;
+	background: #efefef;
+	box-shadow: 0 0 5px 4px inset rgba(0,0,0,0.035);
 }
 
 @media screen and (max-width: 768px) {
@@ -329,7 +335,10 @@ input[type="search"]{
 		padding: 4px 8px;
 	}
 	.footer{
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+	}
+	.navbar{
+		font-size: 1.2rem;
 	}
 }
 
@@ -352,6 +361,9 @@ input[type="search"]{
 		padding: 4px 8px;
 	}
 	.footer{
+		font-size: 1.1rem;
+	}
+	.navbar{
 		font-size: 1.1rem;
 	}
 }

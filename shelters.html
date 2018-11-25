@@ -10,7 +10,6 @@
 		  <meta name="robots" content="noindex,nofollow" /> 
 		<title>Don't-Mestic Violence</title>
 		<link type="text/css" rel="stylesheet" href="styles.css" />
-		<script src="script.js"></script>
 	</head>
 	
 	<body>
@@ -33,12 +32,13 @@
 					</p>
 					<div class="buttoncontainer"><a class="button" href="http://domesticshelters.org/search">DomesticShelters</a></div>
 					<div class="searchcontainer">
-						<input type="search" name="shelter-search"/><div class="button btn-small searchbutton"><span>Search</span></div>
+						<input type="search" id="shelter-search" onkeypress="checksearch(event)" placeholder="Enter your zip code or city to find a shelter nearby"/><div class="button btn-small searchbutton" onclick="search('shelter-search')"><span>Search</span></div>
 					</div>
 				</div>
 			</div>
 			<div class="footer">Copyright &copy; Don't-mestic Violence  2018</div>
 			<div class="button exitbutton" onclick="NormalExit();"><span>Fast</span><span>Exit</span></div>
+			<script src="script.js"></script>
 		</div>
 	</body>
 </html>
