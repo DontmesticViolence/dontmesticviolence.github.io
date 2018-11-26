@@ -140,6 +140,9 @@ h5{
 	flex-direction: column;
 	padding: 50px 20%;
 }
+.coverpage.small{
+	min-height: 0;
+}
 .coverpagebig{
 	padding: 50px 5%;
 }
@@ -167,6 +170,13 @@ h5{
 .coverpage.magenta{
 	background: var(--magenta);
 }
+
+.pageheader a{
+	text-decoration:none;
+	color: black;
+	border-bottom: 2px dashed black;
+}
+
 .navbar > ul{
 	text-decoration: none;
 	padding: 0;
@@ -196,7 +206,6 @@ h5{
 	text-decoration: none;
 	color: #eee;
 }
-
 
 .button{
 	text-decoration: none;
