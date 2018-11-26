@@ -325,6 +325,12 @@ input[type="search"]{
 	box-shadow: 0 0 5px 4px inset rgba(0,0,0,0.035);
 }
 
+.indent{
+	text-indent: 2.5rem;
+	
+	
+}
+
 @media screen and (max-width: 768px) {
 
     :root{
