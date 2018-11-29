@@ -23,7 +23,9 @@ function NormalExit(){
 	window.location = NormalExitSites[r];
 }
 function SafetyExit(){
-	console.log("Safety Exit activated");
+	console.log("Safety Exit activated"); NormalExit();
+	
+	
 }
 
 function search(id){
